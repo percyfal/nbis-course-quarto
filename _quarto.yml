@@ -1,0 +1,7 @@
+render:
+  - pres.qmd
+  - index.qmd
+extensions:
+  - nbis-course
+filters:
+  - nbis-course

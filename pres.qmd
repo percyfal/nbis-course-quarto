@@ -1,0 +1,63 @@
+---
+title: "nbis-course-revealjs example"
+subtitle: How to write a revealjs presentation
+footer: NBIS course
+author: John Doe
+institute: NBIS
+date: today
+format: nbis-course-revealjs
+---
+
+## Usage
+
+This presentation uses the following document yaml header:
+
+```yaml
+---
+title: "nbis-course-revealjs example"
+subtitle: How to write a revealjs presentation
+footer: NBIS course
+author: John Doe
+institute: NBIS
+date: today
+format: nbis-course-revealjs
+---
+```
+
+Notice that the title page includes a NBIS/SciLifeLab logo.
+
+## Home icon
+
+WIP: customizable home icon
+
+At the bottom of each slide there is a home icon that currently points
+to <https://nbis.se>. The intention is to make it customizable such
+that it could point to, e.g., the course home page.
+
+## Color customizations
+
+Some elements are typeset in special colors, such as:
+
+- **strong**
+
+- blockquotes
+
+    > This is a quote
+
+- code
+
+```python
+import numpy as np
+```
+
+- links: [nbis](https://nbis.se/)
+
+## Custom blocks
+
+FIXME: this currently does not work in revealjs format.
+
+:::{.callout-exercise}
+
+This is an exercise
+
+:::

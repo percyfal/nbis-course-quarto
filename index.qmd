@@ -1,0 +1,95 @@
+---
+format: nbis-course-html
+pagetitle: nbis-course-quarto extension
+---
+
+# nbis-course-quarto extension
+
+This document showcases the
+[nbis-course-quarto](https://github.com/percyfal/nbis-course-quarto)
+extension. The extension provides two formats, `nbis-course-html` for
+html documents, and `nbis-course-revealjs` for revealjs presentations.
+The formats are tailored for creating NBIS course web pages and
+presentation, and provide some custom formatting elements. Wherever
+custom colors are used, they follow the [SciLifeLab visual identity guidelines](https://www.scilifelab.se/community-pages/resources/visual-identity).
+
+For an example of the `nbis-course-revealjs` format in action, see
+[pres.qmd](https://github.com/percyfal/nbis-course-quarto/pres.qmd).
+
+## Usage
+
+To use the html format, simply add to the document yaml header
+
+```markdown
+---
+format: nbis-course-html
+---
+```
+
+## Custom callout blocks
+
+Quarto provides callout blocks for highlighting topics of interest.
+The NBIS-course extension adds three additional callout blocks for
+exercise content.
+
+All blocks are formatted as fenced divs, with the syntax
+
+```markdown
+:::{.callout-NAME}
+
+This is a special callout block.
+
+:::
+```
+
+where `NAME` is one of `exercise`, `answer`, and `hint`. By default,
+`exercise` is rendered unfolded, whereas the other blocks are rendered
+folded.
+
+### Example
+
+The blocks can be rendered separately or nested within one another.
+The following example demonstrates the latter case:
+
+```markdown
+
+:::{.callout-exercise}
+
+The `ls` command is used to list the contents of a directory. What
+option provides a so-called long listing format?
+
+:::{.callout-hint}
+
+Type `ls --help` to show the options to `ls`.
+
+:::
+
+:::{.callout-answer}
+
+The `-l` option uses the long listing format, i.e., the command to use
+is `ls -l`.
+
+:::
+
+:::
+```
+
+:::{.callout-exercise}
+
+The `ls` command is used to list the contents of a directory. What
+option provides a so-called long listing format?
+
+:::{.callout-hint}
+
+Type `ls --help` to show the options to `ls`.
+
+:::
+
+:::{.callout-answer}
+
+The `-l` option uses the long listing format, i.e., the command to use
+is `ls -l`.
+
+:::
+
+:::
