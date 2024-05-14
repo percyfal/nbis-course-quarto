@@ -13,8 +13,29 @@ If you're using version control, you will want to check in this directory.
 
 ## Using
 
-_TODO_: Describe how to use your extension.
+### html format
 
-## Example
+For html documents, such as web pages, add the following to the
+document yaml header:
 
-Here is the source code for a minimal example: [example.qmd](example.qmd).
+```yaml
+---
+format: nbis-course-html
+---
+```
+
+### revealjs format
+
+For revealjs presentations, add the following to the document yaml
+header:
+
+```yaml
+---
+format: nbis-course-revealjs
+---
+```
+
+## Examples
+
+For an example of a html document, see [index.qmd](index.qmd), and for
+a revealjs presentation, see [pres.qmd](pres.qmd).
