@@ -5,7 +5,7 @@ Quarto extension for NBIS courses and presentations.
 ## Installing
 
 ```bash
-quarto add NBISweden/nbis-course-quarto
+quarto add percyfal/nbis-course-quarto
 ```
 
 This will install the extension under the `_extensions` subdirectory.
