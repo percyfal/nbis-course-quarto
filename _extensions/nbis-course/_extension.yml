@@ -1,4 +1,4 @@
-title: Nbis-course
+title: Nbiscourse
 author: Per Unneberg
 version: 1.0.0
 quarto-required: ">=1.4.0"
@@ -11,7 +11,6 @@ contributes:
     revealjs:
       theme:
         - revealjs.scss
-      include-after-body: partials/logo-hyperlink.html
       title-slide-attributes:
         data-background-image: logo.svg
         data-background-size: 500px

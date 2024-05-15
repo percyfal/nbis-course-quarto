@@ -16,6 +16,12 @@ custom colors are used, they follow the [SciLifeLab visual identity guidelines](
 For an example of the `nbis-course-revealjs` format in action, see
 [pres.qmd](https://github.com/percyfal/nbis-course-quarto/pres.qmd).
 
+## Inspiration
+
+The code is inspired by and draws from the [Cambridge bioinformatics
+training quarto course
+template](https://github.com/cambiotraining/quarto-course-template).
+
 ## Usage
 
 To use the html format, simply add to the document yaml header

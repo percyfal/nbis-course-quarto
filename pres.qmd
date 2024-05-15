@@ -5,7 +5,12 @@ footer: NBIS course
 author: John Doe
 institute: NBIS
 date: today
-format: nbis-course-revealjs
+format:
+  nbis-course-revealjs:
+    nbis-home:
+      url: https://nbis.se
+revealjs-plugins:
+  - nbis-home
 ---
 
 ## Usage
@@ -26,17 +31,27 @@ format: nbis-course-revealjs
 
 Notice that the title page includes a NBIS/SciLifeLab logo.
 
-## Home icon
+## Home icon plugin (WIP)
 
-WIP: customizable home icon
+The extensions provides a home icon that is placed in the bottom left
+corner of each slide. The home icon is a customizable link that could
+could point to, e.g., the course home page.
 
-At the bottom of each slide there is a home icon that currently points
-to <https://nbis.se>. The intention is to make it customizable such
-that it could point to, e.g., the course home page.
+The plugin can be activated and customized by adding the following to
+the document yaml header:
+
+```yaml
+format:
+  nbis-course-revealjs:
+    nbis-home:
+      url: https://nbis.se
+revealjs-plugins:
+  - nbis-home
+```
 
 ## Color customizations
 
-Some elements are typeset in special colors, such as:
+Theme colors are used to colorize elements, including:
 
 - **strong**
 
