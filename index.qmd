@@ -13,8 +13,8 @@ The formats are tailored for creating NBIS course web pages and
 presentation, and provide some custom formatting elements. Wherever
 custom colors are used, they follow the [SciLifeLab visual identity guidelines](https://www.scilifelab.se/community-pages/resources/visual-identity).
 
-For an example of the `nbis-course-revealjs` format in action, see
-[pres.qmd](https://github.com/percyfal/nbis-course-quarto/pres.qmd).
+For an example of the `nbis-course-revealjs` format in action, see the
+[example presentation](pres.qmd).
 
 ## Inspiration
 
