@@ -7,10 +7,13 @@ institute: NBIS
 date: today
 format:
   nbis-course-revealjs:
-    nbis-home:
-      url: https://nbis.se
+    nbishome:
+      url: https://www.kth.se
+      position:
+        left: 130px
+        bottom: 14px
 revealjs-plugins:
-  - nbis-home
+  - nbishome
 ---
 
 ## Usage
@@ -31,11 +34,12 @@ format: nbis-course-revealjs
 
 Notice that the title page includes a NBIS/SciLifeLab logo.
 
-## Home icon plugin (WIP)
+## Home icon plugin
 
-The extensions provides a home icon that is placed in the bottom left
-corner of each slide. The home icon is a customizable link that could
-could point to, e.g., the course home page.
+The extensions provides a home icon that by default is placed in the
+bottom left corner of each slide, next to the menu. The exact position
+can be configured via the `position` key. The home icon is a
+customizable link that could point to, e.g., the course home page.
 
 The plugin can be activated and customized by adding the following to
 the document yaml header:
@@ -43,10 +47,13 @@ the document yaml header:
 ```yaml
 format:
   nbis-course-revealjs:
-    nbis-home:
+    nbishome:
       url: https://nbis.se
+      position:
+        left: 100px
+        bottom: 10px
 revealjs-plugins:
-  - nbis-home
+  - nbishome
 ```
 
 ## Color customizations
