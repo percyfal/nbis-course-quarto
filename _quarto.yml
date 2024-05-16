@@ -1,3 +1,5 @@
+project:
+  output-dir: docs
 render:
   - pres.qmd
   - index.qmd
