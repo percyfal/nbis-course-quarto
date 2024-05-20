@@ -7,12 +7,12 @@ contributes:
     html:
       toc: true
       theme:
-        - ../nbis-course/html.scss
+        - html.scss
     revealjs:
       theme:
-        - ../nbis-course/revealjs.scss
-      logo: ../nbis-course/logo.svg
+        - revealjs.scss
+      logo: logo.svg
       institute: NBIS
   filters:
-    - ../nbis-course/filters/callout.lua
-    - ../nbis-course/filters/button.lua
+    - filters/callout.lua
+    - filters/button.lua
