@@ -1,17 +1,17 @@
 /*-- scss:defaults --*/
 // Custom callout styles for exercises, answers, and hints
 /*-- scss:uses --*/
-@use 'colors';
+@use 'colors' as co;
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 
 
 /*-- scss:variables --*/
-$callout-color-exercise: colors.$lime;
-$callout-color-exercise-bg: colors.$lime25;
-$callout-color-answer: colors.$grape;
-$callout-color-answer-bg: colors.$grape25;
-$callout-color-hint: colors.$aqua;
-$callout-color-hint-bg: colors.$aqua25;
+$callout-color-exercise: co.$lime;
+$callout-color-exercise-bg: co.$lime25;
+$callout-color-answer: co.$grape;
+$callout-color-answer-bg: co.$grape25;
+$callout-color-hint: co.$aqua;
+$callout-color-hint-bg: co.$aqua25;
 
 
 /*-- scss:rules --*/

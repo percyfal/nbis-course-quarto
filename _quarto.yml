@@ -3,6 +3,7 @@ project:
 render:
   - pres.qmd
   - index.qmd
+  - pres-logo.qmd
 extensions:
   - nbis-course
 filters:

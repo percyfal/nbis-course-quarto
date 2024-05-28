@@ -28,11 +28,9 @@ footer: NBIS course
 author: John Doe
 institute: NBIS
 date: today
-format: nbis-course-revealjs
+format: revealjs
 ---
 ```
-
-Notice that the title page includes a NBIS/SciLifeLab logo.
 
 ## Home icon plugin
 
