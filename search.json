@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbis-course-quarto extension",
+    "section": "",
+    "text": "This document showcases the nbis-course-quarto extension. The extension provides two formats, nbis-course-html for html documents, and nbis-course-revealjs for revealjs presentations. The formats are tailored for creating NBIS course web pages and presentation, and provide some custom formatting elements. Wherever custom colors are used, they follow the SciLifeLab visual identity guidelines.\nFor an example of the nbis-course-revealjs format in action, see the example presentation.\n\n\nThe code is inspired by and draws from the Cambridge bioinformatics training quarto course template.\n\n\n\nTo use the html format, simply add to the document yaml header\n---\nformat: nbis-course-html\n---\n\n\n\nQuarto provides callout blocks for highlighting topics of interest. The NBIS-course extension adds three additional callout blocks for exercise content.\nAll blocks are formatted as fenced divs, with the syntax\n:::{.callout-NAME}\n\nThis is a special callout block.\n\n:::\nwhere NAME is one of exercise, answer, and hint. By default, exercise is rendered unfolded, whereas the other blocks are rendered folded.\n\n\nThe blocks can be rendered separately or nested within one another. The following example demonstrates the latter case:\n\n:::{.callout-exercise}\n\nThe `ls` command is used to list the contents of a directory. What\noption provides a so-called long listing format?\n\n:::{.callout-hint}\n\nType `ls --help` to show the options to `ls`.\n\n:::\n\n:::{.callout-answer}\n\nThe `-l` option uses the long listing format, i.e., the command to use\nis `ls -l`.\n\n:::\n\n:::\n\n\n\n\n\n\nExercise\n\n\n\n\n\n\n\nThe ls command is used to list the contents of a directory. What option provides a so-called long listing format?\n\n\n\n\n\n\nHint\n\n\n\n\n\n\n\nType ls --help to show the options to ls.\n\n\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\n\nThe -l option uses the long listing format, i.e., the command to use is ls -l."
+  },
+  {
+    "objectID": "index.html#inspiration",
+    "href": "index.html#inspiration",
+    "title": "nbis-course-quarto extension",
+    "section": "",
+    "text": "The code is inspired by and draws from the Cambridge bioinformatics training quarto course template."
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "nbis-course-quarto extension",
+    "section": "",
+    "text": "To use the html format, simply add to the document yaml header\n---\nformat: nbis-course-html\n---"
+  },
+  {
+    "objectID": "index.html#custom-callout-blocks",
+    "href": "index.html#custom-callout-blocks",
+    "title": "nbis-course-quarto extension",
+    "section": "",
+    "text": "Quarto provides callout blocks for highlighting topics of interest. The NBIS-course extension adds three additional callout blocks for exercise content.\nAll blocks are formatted as fenced divs, with the syntax\n:::{.callout-NAME}\n\nThis is a special callout block.\n\n:::\nwhere NAME is one of exercise, answer, and hint. By default, exercise is rendered unfolded, whereas the other blocks are rendered folded.\n\n\nThe blocks can be rendered separately or nested within one another. The following example demonstrates the latter case:\n\n:::{.callout-exercise}\n\nThe `ls` command is used to list the contents of a directory. What\noption provides a so-called long listing format?\n\n:::{.callout-hint}\n\nType `ls --help` to show the options to `ls`.\n\n:::\n\n:::{.callout-answer}\n\nThe `-l` option uses the long listing format, i.e., the command to use\nis `ls -l`.\n\n:::\n\n:::\n\n\n\n\n\n\nExercise\n\n\n\n\n\n\n\nThe ls command is used to list the contents of a directory. What option provides a so-called long listing format?\n\n\n\n\n\n\nHint\n\n\n\n\n\n\n\nType ls --help to show the options to ls.\n\n\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\n\nThe -l option uses the long listing format, i.e., the command to use is ls -l."
+  },
+  {
+    "objectID": "pres.html#usage",
+    "href": "pres.html#usage",
+    "title": "nbis-course-revealjs example",
+    "section": "Usage",
+    "text": "Usage\nThis presentation uses the following document yaml header:\n---\ntitle: \"nbis-course-revealjs example\"\nsubtitle: How to write a revealjs presentation\nfooter: NBIS course\nauthor: John Doe\ninstitute: NBIS\ndate: today\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "pres.html#home-icon-plugin",
+    "href": "pres.html#home-icon-plugin",
+    "title": "nbis-course-revealjs example",
+    "section": "Home icon plugin",
+    "text": "Home icon plugin\nThe extensions provides a home icon that by default is placed in the bottom left corner of each slide, next to the menu. The exact position can be configured via the position key. The home icon is a customizable link that could point to, e.g., the course home page.\nThe plugin can be activated and customized by adding the following to the document yaml header:\nformat:\n  nbis-course-revealjs:\n    nbishome:\n      url: https://nbis.se\n      position:\n        left: 100px\n        bottom: 10px\nrevealjs-plugins:\n  - nbishome"
+  },
+  {
+    "objectID": "pres.html#color-customizations",
+    "href": "pres.html#color-customizations",
+    "title": "nbis-course-revealjs example",
+    "section": "Color customizations",
+    "text": "Color customizations\nTheme colors are used to colorize elements, including:\n\nstrong\nblockquotes\n\nThis is a quote\n\ncode\n\nimport numpy as np\n\nlinks: nbis"
+  },
+  {
+    "objectID": "pres.html#custom-blocks",
+    "href": "pres.html#custom-blocks",
+    "title": "nbis-course-revealjs example",
+    "section": "Custom blocks",
+    "text": "Custom blocks\nFIXME: this currently does not work in revealjs format.\n\n\n\n\n\n\nExercise\n\n\n\n\nThis is an exercise\n\n\n\n\n\n\n\n\nNBIS course"
+  },
+  {
+    "objectID": "pres-logo.html#usage",
+    "href": "pres-logo.html#usage",
+    "title": "nbis-course-revealjs example",
+    "section": "Usage",
+    "text": "Usage\nThis presentation uses the following document yaml header:\n---\ntitle: \"nbis-course-revealjs example\"\nsubtitle: How to write a revealjs presentation\nfooter: NBIS course\nauthor: John Doe\ninstitute: NBIS\ndate: today\nformat: nbis-course-revealjs\n---\nNotice that the title page includes a NBIS/SciLifeLab logo."
+  },
+  {
+    "objectID": "pres-logo.html#home-icon-plugin",
+    "href": "pres-logo.html#home-icon-plugin",
+    "title": "nbis-course-revealjs example",
+    "section": "Home icon plugin",
+    "text": "Home icon plugin\nThe extensions provides a home icon that by default is placed in the bottom left corner of each slide, next to the menu. The exact position can be configured via the position key. The home icon is a customizable link that could point to, e.g., the course home page.\nThe plugin can be activated and customized by adding the following to the document yaml header:\nformat:\n  nbis-course-revealjs:\n    nbishome:\n      url: https://nbis.se\n      position:\n        left: 100px\n        bottom: 10px\nrevealjs-plugins:\n  - nbishome"
+  },
+  {
+    "objectID": "pres-logo.html#color-customizations",
+    "href": "pres-logo.html#color-customizations",
+    "title": "nbis-course-revealjs example",
+    "section": "Color customizations",
+    "text": "Color customizations\nTheme colors are used to colorize elements, including:\n\nstrong\nblockquotes\n\nThis is a quote\n\ncode\n\nimport numpy as np\n\nlinks: nbis"
+  },
+  {
+    "objectID": "pres-logo.html#custom-blocks",
+    "href": "pres-logo.html#custom-blocks",
+    "title": "nbis-course-revealjs example",
+    "section": "Custom blocks",
+    "text": "Custom blocks\nFIXME: this currently does not work in revealjs format.\n\n\n\n\n\n\nExercise\n\n\n\n\nThis is an exercise\n\n\n\n\n\n\n\n\n\nNBIS course"
+  }
+]
