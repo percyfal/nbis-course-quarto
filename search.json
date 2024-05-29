@@ -32,7 +32,7 @@
     "href": "pres.html#usage",
     "title": "nbis-course-revealjs example",
     "section": "Usage",
-    "text": "Usage\nThis presentation uses the following document yaml header:\n---\ntitle: \"nbis-course-revealjs example\"\nsubtitle: How to write a revealjs presentation\nfooter: NBIS course\nauthor: John Doe\ninstitute: NBIS\ndate: today\nformat: revealjs\n---"
+    "text": "Usage\nThis presentation uses the following document yaml header:\n---\ntitle: \"nbis-course-revealjs example\"\nsubtitle: How to write a revealjs presentation\nfooter: NBIS course\nauthor: John Doe\ninstitute: NBIS\ndate: today\nformat: nbis-course-revealjs\n---"
   },
   {
     "objectID": "pres.html#home-icon-plugin",
@@ -42,45 +42,24 @@
     "text": "Home icon plugin\nThe extensions provides a home icon that by default is placed in the bottom left corner of each slide, next to the menu. The exact position can be configured via the position key. The home icon is a customizable link that could point to, e.g., the course home page.\nThe plugin can be activated and customized by adding the following to the document yaml header:\nformat:\n  nbis-course-revealjs:\n    nbishome:\n      url: https://nbis.se\n      position:\n        left: 100px\n        bottom: 10px\nrevealjs-plugins:\n  - nbishome"
   },
   {
+    "objectID": "pres.html#underlined-titles",
+    "href": "pres.html#underlined-titles",
+    "title": "nbis-course-revealjs example",
+    "section": "Underlined titles",
+    "text": "Underlined titles\nVarious different title formats are supported. For instance, the ultitle used here produces titles underlined with a green bar.\nformat:\n  nbis-course-revealjs:\n    ultitle: true"
+  },
+  {
+    "objectID": "pres.html#title-and-slide-logos",
+    "href": "pres.html#title-and-slide-logos",
+    "title": "nbis-course-revealjs example",
+    "section": "Title and slide logos",
+    "text": "Title and slide logos\nBy default, a logo is added to the title page by making use of title-slide-attributes. However, this prevent correct embedding of resources. In order to generate slides with embedded resources, you can set the nbistitlelogo key:\nformat:\n  nbis-course-revealjs:\n    nbistitlelogo: false\nIf you want to omit the logo in the footer, you can unset the standard logo key:\nformat:\n  nbis-course-revealjs:\n    logo: \"\""
+  },
+  {
     "objectID": "pres.html#color-customizations",
     "href": "pres.html#color-customizations",
     "title": "nbis-course-revealjs example",
     "section": "Color customizations",
-    "text": "Color customizations\nTheme colors are used to colorize elements, including:\n\nstrong\nblockquotes\n\nThis is a quote\n\ncode\n\nimport numpy as np\n\nlinks: nbis"
-  },
-  {
-    "objectID": "pres.html#custom-blocks",
-    "href": "pres.html#custom-blocks",
-    "title": "nbis-course-revealjs example",
-    "section": "Custom blocks",
-    "text": "Custom blocks\nFIXME: this currently does not work in revealjs format.\n\n\n\n\n\n\nExercise\n\n\n\n\nThis is an exercise\n\n\n\n\n\n\n\n\nNBIS course"
-  },
-  {
-    "objectID": "pres-logo.html#usage",
-    "href": "pres-logo.html#usage",
-    "title": "nbis-course-revealjs example",
-    "section": "Usage",
-    "text": "Usage\nThis presentation uses the following document yaml header:\n---\ntitle: \"nbis-course-revealjs example\"\nsubtitle: How to write a revealjs presentation\nfooter: NBIS course\nauthor: John Doe\ninstitute: NBIS\ndate: today\nformat: nbis-course-revealjs\n---\nNotice that the title page includes a NBIS/SciLifeLab logo."
-  },
-  {
-    "objectID": "pres-logo.html#home-icon-plugin",
-    "href": "pres-logo.html#home-icon-plugin",
-    "title": "nbis-course-revealjs example",
-    "section": "Home icon plugin",
-    "text": "Home icon plugin\nThe extensions provides a home icon that by default is placed in the bottom left corner of each slide, next to the menu. The exact position can be configured via the position key. The home icon is a customizable link that could point to, e.g., the course home page.\nThe plugin can be activated and customized by adding the following to the document yaml header:\nformat:\n  nbis-course-revealjs:\n    nbishome:\n      url: https://nbis.se\n      position:\n        left: 100px\n        bottom: 10px\nrevealjs-plugins:\n  - nbishome"
-  },
-  {
-    "objectID": "pres-logo.html#color-customizations",
-    "href": "pres-logo.html#color-customizations",
-    "title": "nbis-course-revealjs example",
-    "section": "Color customizations",
-    "text": "Color customizations\nTheme colors are used to colorize elements, including:\n\nstrong\nblockquotes\n\nThis is a quote\n\ncode\n\nimport numpy as np\n\nlinks: nbis"
-  },
-  {
-    "objectID": "pres-logo.html#custom-blocks",
-    "href": "pres-logo.html#custom-blocks",
-    "title": "nbis-course-revealjs example",
-    "section": "Custom blocks",
-    "text": "Custom blocks\nFIXME: this currently does not work in revealjs format.\n\n\n\n\n\n\nExercise\n\n\n\n\nThis is an exercise\n\n\n\n\n\n\n\n\n\nNBIS course"
+    "text": "Color customizations\nColors follow the SciLifeLab visual identity guidelines. Theme colors are used to colorize elements, including:\n\nstrong\nblockquotes\n\nThis is a quote\n\ncode\n\nimport numpy as np\n\nlinks: nbis\n\n\n\n\n\nNBIS course"
   }
 ]

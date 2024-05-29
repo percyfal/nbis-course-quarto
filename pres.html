@@ -399,7 +399,7 @@
   <h4 class="institute">NBIS</h4>
   <h4 class="date">2024-05-29</h4>
 </section>
-<section id="usage" class="slide level2">
+<section id="usage" class="slide level2 ultitle">
 <h2>Usage</h2>
 <p>This presentation uses the following document yaml header:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="pp">---</span></span>
@@ -409,10 +409,10 @@
 <span id="cb1-5"><a></a><span class="fu">author</span><span class="kw">:</span><span class="at"> John Doe</span></span>
 <span id="cb1-6"><a></a><span class="fu">institute</span><span class="kw">:</span><span class="at"> NBIS</span></span>
 <span id="cb1-7"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> today</span></span>
-<span id="cb1-8"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb1-8"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> nbis-course-revealjs</span></span>
 <span id="cb1-9"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="home-icon-plugin" class="slide level2">
+<section id="home-icon-plugin" class="slide level2 ultitle">
 <h2>Home icon plugin</h2>
 <p>The extensions provides a home icon that by default is placed in the bottom left corner of each slide, next to the menu. The exact position can be configured via the <code>position</code> key. The home icon is a customizable link that could point to, e.g., the course home page.</p>
 <p>The plugin can be activated and customized by adding the following to the document yaml header:</p>
@@ -426,9 +426,27 @@
 <span id="cb2-8"><a></a><span class="fu">revealjs-plugins</span><span class="kw">:</span></span>
 <span id="cb2-9"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> nbishome</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="color-customizations" class="slide level2">
+<section id="underlined-titles" class="slide level2 ultitle">
+<h2>Underlined titles</h2>
+<p>Various different title formats are supported. For instance, the <code>ultitle</code> used here produces titles underlined with a green bar.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb3-2"><a></a><span class="at">  </span><span class="fu">nbis-course-revealjs</span><span class="kw">:</span></span>
+<span id="cb3-3"><a></a><span class="at">    </span><span class="fu">ultitle</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="title-and-slide-logos" class="slide level2 ultitle">
+<h2>Title and slide logos</h2>
+<p>By default, a logo is added to the title page by making use of <code>title-slide-attributes</code>. However, this prevent correct embedding of resources. In order to generate slides with embedded resources, you can set the <code>nbistitlelogo</code> key:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb4-2"><a></a><span class="at">  </span><span class="fu">nbis-course-revealjs</span><span class="kw">:</span></span>
+<span id="cb4-3"><a></a><span class="at">    </span><span class="fu">nbistitlelogo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you want to omit the logo in the footer, you can unset the standard <code>logo</code> key:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb5-2"><a></a><span class="at">  </span><span class="fu">nbis-course-revealjs</span><span class="kw">:</span></span>
+<span id="cb5-3"><a></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="color-customizations" class="slide level2 ultitle">
 <h2>Color customizations</h2>
-<p>Theme colors are used to colorize elements, including:</p>
+<p>Colors follow the <a href="https://www.scilifelab.se/community-pages/resources/visual-identity">SciLifeLab visual identity guidelines</a>. Theme colors are used to colorize elements, including:</p>
 <ul>
 <li><p><strong>strong</strong></p></li>
 <li><p>blockquotes</p>
@@ -437,33 +455,13 @@
 </blockquote></li>
 <li><p>code</p></li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>links: <a href="https://nbis.se/">nbis</a></li>
 </ul>
-</section>
-<section id="custom-blocks" class="slide level2">
-<h2>Custom blocks</h2>
-<p>FIXME: this currently does not work in revealjs format.</p>
-<div class="callout callout-exercise callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Exercise</strong></p>
-</div>
-<div class="callout-content">
-<div>
-<div class="callout-exercise">
-<p>This is an exercise</p>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <div class="quarto-auto-generated-content">
+<p><img src="site_libs/quarto-contrib/quarto-project/nbis-course/logo.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>NBIS course</p>
 </div>
