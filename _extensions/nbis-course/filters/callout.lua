@@ -19,20 +19,20 @@ local callout_attrs = {
 }
 
 local function isCallout(class)
-  return class == 'callout' or class:match("^callout%-")
+   return class == 'callout' or class:match("^callout%-")
 end
 
 local function calloutType(div)
-  for _, class in ipairs(div.attr.classes) do
-    if isCallout(class) then
-      local type = class:match("^callout%-(.*)")
-      if type == nil then
-        type = "none"
+   for _, class in ipairs(div.attr.classes) do
+      if isCallout(class) then
+	 local type = class:match("^callout%-(.*)")
+	 if type == nil then
+	    type = "none"
+	 end
+	 return type
       end
-      return type
-    end
-  end
-  return nil
+   end
+   return nil
 end
 
 

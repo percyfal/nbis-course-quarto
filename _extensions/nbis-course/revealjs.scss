@@ -60,16 +60,17 @@ $presentation-h6-font-size: 1em !default;
   border-top: lightgray 2px solid;
 }
 
-.reveal .ultitle > h1,
-.reveal .ultitle > h2,
-.reveal .ultitle > h3 {
-    text-decoration: underline;
-    text-decoration-color: cl.$lime;
-    text-underline-offset: 0.3em;
+.reveal .ultitle > h1:after,
+.reveal .ultitle > h2:after,
+.reveal .ultitle > h3:after {
+    position: relative;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    display: inline-block;
+    display: block;
+    border-bottom: 2px solid cl.$lime;
+    content: "";
 }
-
 
 /* sizes */
 .largest {

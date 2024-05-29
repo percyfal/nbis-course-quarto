@@ -12,6 +12,8 @@ format:
       position:
         left: 130px
         bottom: 14px
+    ultitle: true
+    nbistitlelogo: true
 revealjs-plugins:
   - nbishome
 ---
@@ -28,7 +30,7 @@ footer: NBIS course
 author: John Doe
 institute: NBIS
 date: today
-format: revealjs
+format: nbis-course-revealjs
 ---
 ```
 
@@ -54,8 +56,43 @@ revealjs-plugins:
   - nbishome
 ```
 
+## Underlined titles
+
+Various different title formats are supported. For instance, the
+`ultitle` used here produces titles underlined with a green bar.
+
+```yaml
+format:
+  nbis-course-revealjs:
+    ultitle: true
+```
+
+## Title and slide logos
+
+By default, a logo is added to the title page by making use of
+`title-slide-attributes`. However, this prevent correct embedding of
+resources. In order to generate slides with embedded resources, you
+can set the `nbistitlelogo` key:
+
+```yaml
+format:
+  nbis-course-revealjs:
+    nbistitlelogo: false
+```
+
+If you want to omit the logo in the footer, you can unset the standard
+`logo` key:
+
+```yaml
+format:
+  nbis-course-revealjs:
+    logo: ""
+```
+
 ## Color customizations
 
+Colors follow the [SciLifeLab visual identity
+guidelines](https://www.scilifelab.se/community-pages/resources/visual-identity).
 Theme colors are used to colorize elements, including:
 
 - **strong**
@@ -71,13 +108,3 @@ import numpy as np
 ```
 
 - links: [nbis](https://nbis.se/)
-
-## Custom blocks
-
-FIXME: this currently does not work in revealjs format.
-
-:::{.callout-exercise}
-
-This is an exercise
-
-:::
